@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add Food Item</h2>
+        <div id="foodForm">
+            <div class="form-group">
+                <label for="foodName">Food Name:</label>
+                <input type="text" id="foodName" name="foodName" required>
+            </div>
+            <div class="form-group">
+                <label for="foodImage">Food Image URL:</label>
+                <input type="url" id="foodImage" name="foodImage" required>
+            </div>
+            <div class="form-group">
+                <label for="foodId">Food ID:</label>
+                <input type="text" id="foodId" name="foodId" required>
+            </div>
+            <div class="form-group">
+                <label for="foodDescription">Description:</label>
+                <textarea id="foodDescription" name="foodDescription" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="foodPrice">Price:</label>
+                <input type="number" id="foodPrice" name="foodPrice" step="0.01" required>
+            </div>
+            <button onclick="addFood()" type="submit">Add Food</button>
+        </div>
+        <div id="foodDiv">
+        
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

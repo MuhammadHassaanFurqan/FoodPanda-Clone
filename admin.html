@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Sign Up / Sign In Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.all.min.js
+"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <center>
+            <h1><strong>Admin</strong></h1>
+        </center><br>
+        <div id="signUpForm" class="form">
+            <h2>Admin Sign Up</h2>
+            <label for="signUpName">Name</label>
+            <input type="text" id="signUpName" name="signUpName" required>
+            <label for="signUpUsername">Username</label>
+            <input type="text" id="signUpUsername" name="signUpUsername" required>
+            <label for="signUpPassword">Password</label>
+            <input type="password" id="signUpPassword" name="signUpPassword" required>
+            <button onclick="Adminsignup()" type="submit">Sign Up</button>
+        </div><br><br>
+        <div id="signInForm" class="form">
+            <h2>Admin Sign In</h2>
+            <label for="signInUsername">Username</label>
+            <input type="text" id="signInUsername" name="signInUsername" required>
+            <label for="signInPassword">Password</label>
+            <input type="password" id="signInPassword" name="signInPassword" required>
+            <button onclick="Adminsignin()" type="submit">Sign In</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
